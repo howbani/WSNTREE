@@ -1,0 +1,20 @@
+﻿Tree Based Simulator
+
+
+winexe
+C#
+.cs
+D:\WSN\WsnSimulator\TreeBasedWsnSimulator\obj\Debug\
+TreeBasedWsnSimulator
+none
+false
+DEBUG;TRACE
+D:\WSN\WsnSimulator\TreeBasedWsnSimulator\App.xaml
+19-276269618
+
+51-1657750554
+12-1401562060
+DataPacket\Datapacket.xaml;ExpermentsResults\ExpReport.xaml;ExpermentsResults\UISetParEnerConsum.xaml;Modules\Sensor.xaml;Modules\TreeNode.xaml;ui\UiComputeLifeTimeScen1.xaml;ui\UIExpermentResults.xaml;ui\ListControl.xaml;ui\UiNetworkLifetimeReport.xaml;ui\UiRecievedPackertsBySink.xaml;ui\MainWindow.xaml;ui\NetwokImport.xaml;ui\UiAddNodes.xaml;ui\UiExportTopology.xaml;ui\UiImportTopology.xaml;ui\UiPrintNetworkRoutingLog.xaml;ui\UiPrintOverAllLog.xaml;ui\UiShowLists.xaml;ui\UIshowSensorsLocations.xaml;
+
+False
+

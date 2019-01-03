@@ -1,0 +1,52 @@
+﻿<UserControl x:Class=" TreeBasedWsnSimulator.Modules.TreeNode"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="10" d:DesignWidth="10">
+
+
+
+    <Grid Height="10" Width="10" Name="Tree_node_holder">
+        <Ellipse 
+            Name="node_borders" 
+            VerticalAlignment="Center" 
+            HorizontalAlignment="Center" 
+            Width="10" 
+            Height="10" 
+            Stroke="Black"/>
+
+
+        <StackPanel
+            Orientation="Vertical"
+            VerticalAlignment="Center" 
+            HorizontalAlignment="Center"
+            >
+            <Label
+               Height="25"
+               Name="lbl_parrentID"
+               VerticalContentAlignment="Center" 
+               HorizontalContentAlignment="Center"
+               VerticalAlignment="Center" 
+                HorizontalAlignment="Center"
+                FontSize="10"
+                Foreground="Red"
+               Content="p"
+            />
+            <Label
+               Name="lbl_node_id"
+               VerticalContentAlignment="Center" 
+               HorizontalContentAlignment="Center"
+               VerticalAlignment="Center" 
+               HorizontalAlignment="Center"
+               Content="ID"
+            />
+           
+        </StackPanel>
+
+
+
+    </Grid>
+    
+</UserControl>

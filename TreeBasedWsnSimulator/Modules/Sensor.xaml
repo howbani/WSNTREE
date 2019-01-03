@@ -1,0 +1,93 @@
+﻿<UserControl x:Class="TreeBasedWsnSimulator.Modules.Sensor"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             MouseEnter="UserControl_MouseEnter"
+             MouseLeave="UserControl_MouseLeave"
+             d:DesignHeight="100" d:DesignWidth="100">
+
+    <Grid Name="Device_Sensor"
+           MouseDown="Device_Sensor_MouseDown"
+           MouseMove="Device_Sensor_MouseMove"
+           MouseUp="Device_Sensor_MouseUp"
+          >
+        <Grid.ContextMenu>
+            <ContextMenu>
+
+                <Label Name="btn_send_1_packet" MouseDown="btn_send_packet_MouseDown" >
+                    Send 1 Packets
+                </Label>
+                <Label Name="btn_send_10_packet" MouseDown="btn_send_packet_MouseDown">
+                    Send 10 Packets
+                </Label>
+                <Label Name="btn_send_100_packet" MouseDown="btn_send_packet_MouseDown">
+                    Send 100 Packets
+                </Label>
+                <Label Name="btn_send_300_packet" MouseDown="btn_send_packet_MouseDown">
+                    Send 300 Packets
+                </Label>
+                <Label Name="btn_send_1000_packet" MouseDown="btn_send_packet_MouseDown">
+                    Send 1000 Packets
+                </Label>
+
+                <Label Name="btn_send_5000_packet" MouseDown="btn_send_packet_MouseDown">
+                    Send 5000 Packets
+                </Label>
+            </ContextMenu>
+        </Grid.ContextMenu>
+
+
+        <Ellipse 
+            Name="Ellipse_Sensing_range" 
+            VerticalAlignment="Center" 
+            HorizontalAlignment="Center" 
+            Width="100" 
+            Height="100" 
+            Visibility="Hidden"
+            StrokeDashArray="2"
+            Stroke="Black"/>
+        <Ellipse 
+            Name="Ellipse_center"
+            VerticalAlignment="Center" 
+            HorizontalAlignment="Center" 
+            Fill="Gray"
+            Width="8" 
+            Height="8" 
+            Stroke="Gray">
+        </Ellipse>
+
+
+        <Label
+            VerticalAlignment="Center" 
+            HorizontalAlignment="Center"
+            MouseEnter="lbl_Sensing_ID_MouseEnter"
+            FontSize="10"
+            Margin="0,-20,0,0"
+            Name="lbl_Sensing_ID"
+            FontWeight="Light"
+            Content="120"
+            />
+
+        <ProgressBar
+            VerticalAlignment="Center" 
+            BorderThickness="0.6"
+            BorderBrush="Black"
+            HorizontalAlignment="Center"
+            Margin="0,20,0,0"
+            Visibility="Hidden"
+            Name="Prog_batteryCapacityNotation"
+            ValueChanged="Prog_batteryCapacityNotation_ValueChanged"
+            Height="7"
+            Width="20"
+            />
+
+
+
+        
+
+    </Grid>
+    
+    
+</UserControl>

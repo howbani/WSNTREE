@@ -1,0 +1,45 @@
+﻿<Window x:Class="TreeBasedWsnSimulator.ExpermentsResults.UISetParEnerConsum"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        WindowStyle="SingleBorderWindow"
+        
+        Title="UISetParEnerConsum" Height="200" Width="500">
+    
+    <StackPanel Margin="10" Orientation="Vertical">
+        <StackPanel Margin="2" Orientation="Horizontal">
+            <Label Width="150">Simulation Time</Label>
+            <ComboBox Width="100" Name="comb_simuTime"></ComboBox>
+            <Label>s</Label>
+           
+        </StackPanel>
+
+        <StackPanel Margin="2" Orientation="Horizontal">
+            <Label Width="150" Content="Packet Rate: 1/"/>
+            <ComboBox Width="100" Name="comb_packet_rate"></ComboBox>
+            <Label>s</Label>
+           
+        </StackPanel>
+
+        <StackPanel Margin="2" Orientation="Horizontal">
+            <CheckBox Name="chk_save_logs" IsChecked="False" VerticalContentAlignment="Center" >Save Logs</CheckBox>
+            <CheckBox IsChecked="False" Name="chk_drawrouts" VerticalContentAlignment="Center" >Draw Packets Routs</CheckBox>
+            <CheckBox Unchecked="chk_stope_when_first_node_deis_Unchecked" Checked="chk_stope_when_first_node_deis_Checked" Name="chk_stope_when_first_node_deis" IsChecked="True" VerticalContentAlignment="Center" >Stop when the first node dies</CheckBox>
+
+        </StackPanel>
+
+    
+
+       
+
+        
+
+       
+
+        <Button x:Name="btn_ok" Margin="255,0,91,0" Content="Start" Click="btn_ok_Click" Height="27"/>
+
+    </StackPanel>
+
+</Window>
